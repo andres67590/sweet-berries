@@ -1,0 +1,127 @@
+/**General settings for the website**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 1fr 1fr 1fr 100p;
+}
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+/**Navigation Bar**/
+
+.header{
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 160px;
+}
+
+a{
+    text-decoration: none;
+    color: #FF4C4C;
+    margin: 15px;
+    
+}
+
+.Getstarted{
+    background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
+    color: white;
+    border-radius: 28px;
+    padding: 10px 17px;
+    text-align: center;
+}
+
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+/**Banner**/
+
+.banner{
+    grid-column: span 3;
+    display: flex;
+    margin: 50px;
+}
+
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.banner img{
+    width: 757px;
+    height: 364px;
+    border-radius: 39px;
+    margin-left: 100px;
+}
+
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+/**Main**/
+
+.main{
+    grid-column: span 3;
+    grid-row: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;  
+}
+
+.recipe-card{
+    width: 350px;;
+    height: 350px;
+    margin: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+}
+
+.recipe-card-explore{
+    width: 350px;;
+    height: 350px;
+    margin: 10px;
+    background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.getstarted{
+    color: #FF4C4C;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.recipe-card img{
+}
+
+/**-----------------------------------------------------------------------------------------------------------------------**/
+
+.footer{
+    background-color: #FF4C4C;
+    grid-column: span 4;
+    color: #FFFFFF;
+    width: 100%;
+    height: 78px;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
